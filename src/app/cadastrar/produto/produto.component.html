@@ -1,0 +1,6 @@
+<po-dynamic-form #dynamicForm p-auto-focus="product" [p-fields]="fields" [p-value]="products">
+</po-dynamic-form>
+
+<div class="po-row">
+  <po-button class="po-md-3" p-label="Save" [p-disabled]="dynamicForm?.form.invalid" (p-click)="cadastrar()">
+  </po-button>

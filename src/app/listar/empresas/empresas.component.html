@@ -1,0 +1,16 @@
+<!-- <ul>
+  <li *ngFor="let element of todosItens">{{element.company}}</li>
+</ul> -->
+
+<po-list-view p-property-title="name" [p-items]="items" [p-actions]="actions">
+
+  <ng-template p-list-view-content-template let-item>
+    <div class="po-row">
+      <po-info class="po-md-2" p-label="Empresa" [p-value]="item.company"></po-info>
+      <po-info class="po-md-2" p-label="Telefone" [p-value]="item.telephone"></po-info>
+      <po-info class="po-md-2" p-label="Descrição" [p-value]="item.descricao"></po-info>
+
+    </div>
+  </ng-template>
+
+</po-list-view>

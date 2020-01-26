@@ -1,0 +1,14 @@
+.nav{
+  background-color: yellow;
+  height: 10vh;
+}
+.img-menu{
+  width: 20%;
+}
+.display-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
